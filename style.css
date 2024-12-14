@@ -1,0 +1,311 @@
+body{
+    margin: 0;
+    padding: 0;
+    }
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    display: flex;
+    background-color: #f9eadfff;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}
+
+#logo img {
+    width: 220px;
+    height: 60px;
+}
+
+nav {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    height: 70px;
+}
+
+    nav ul {
+        margin-bottom: -220px;
+        width: 250px;
+        display: none;
+        background-color: #f9eadfff;
+    }
+
+        nav ul.active {
+            display: block;
+            position: relative;
+        }
+
+        nav ul li {
+            margin: 40px 0 40px 0;
+            font-size: 1.5em;
+            list-style: none;
+        }
+
+#ham {
+    height: 25px;
+    width: 30px;
+    position: absolute;
+    margin: 25px 7% 20px 0;
+}
+
+    #ham span {
+        background-color: #B50004;
+        width: 25px;
+        height: 3.5px;
+        margin-bottom: 5px;
+        display: block;
+    }
+
+
+#varmtVälkomna1{
+text-align: center;
+font-size: 30px;
+font-style: italic;
+padding: 100px;
+padding-bottom: 100px;
+background-color:#ebebeb;
+
+}
+
+
+h1{
+    margin-bottom: 10px;
+}
+    
+#txt{
+    max-width: 4400px;
+   
+}
+
+.tårta {
+    background-color: antiquewhite;
+    padding-bottom: 100px;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 25px;
+    font-style: italic;
+  
+    
+}
+
+.txt2{
+    display:flex;
+    justify-content:space-evenly;
+    margin: 10px 10px;
+}
+
+.txt2 div{
+    display:flex;
+    justify-content:space-between;
+    width: 600px;
+}
+
+.bild{
+    display: flex;
+}
+
+#image1{
+width: 33.3%;
+}
+
+#image2{
+ width: 33.3%;
+}
+
+#image3{
+    width: 33.3%;
+}
+
+
+
+.tårta2 {
+    background-color: antiquewhite;
+    padding-bottom: 100px;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 25px;
+    font-style: italic;
+    
+}
+
+.txt3{
+    display:flex;
+    justify-content:space-evenly;
+    margin: 10px 10px;
+}
+
+.txt3 div{
+    display:flex;
+    justify-content:space-between;
+    width: 600px;
+}
+
+
+
+.bild2{
+    display: flex;
+}
+
+#image4{
+width: 33.3%;
+}
+
+#image5{
+ width: 33.3%;
+}
+
+#image6{
+    width: 33.3%;
+}
+
+
+
+@media (max-width: 1400px){
+   
+.txt2 div{
+    width: 400px;
+}
+}
+
+
+@media (max-width: 900px){
+   
+    .txt2 div{
+        width: 400px;
+    } 
+
+    .txt2{
+        flex-direction: column;
+    }
+    .tårta{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+ } 
+
+ .txt3 div{
+    width: 400px;
+} 
+ .txt3{
+    flex-direction: column;
+}
+    .tårta2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+
+}
+
+
+
+@media (min-width: 800px) {
+    nav ul {
+        display: flex;
+        width: 48%;
+        margin: 0;
+        height: 100%;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+        nav ul.active {
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 30px 0 0;
+        }
+
+    #ham {
+        display: none;
+    }
+}
+
+
+
+
+
+footer {
+    background-color: #f9eadfff;
+    font-style: italic;
+    padding-top: 20px;
+    text-align: center;
+    font-family: 'Baskerville Old Face';
+}
+
+#icons {
+}
+
+    #icons img {
+        width: 20px;
+        padding: 0 10px 20px 0;
+    }
+
+#kontaktaOssFooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+    #kontaktaOssFooter ul {
+        width: 400px;
+        margin: 0 32px 30px 0;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #kontaktaOssFooter li {
+        list-style: none;
+    }
+
+footer span {
+    display: none;
+}
+
+@media (min-width: 800px) {
+    footer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#kontaktaOssFooter {
+    width: 200px;
+    justify-content: left;
+}
+
+    #kontaktaOssFooter ul {
+        flex-direction: column;
+    }
+
+    #kontaktaOssFooter li {
+        margin: 0 15px 10px 0;
+    }
+
+#icons {
+    margin-top: 40px;
+}
+
+    #icons img {
+        width: 70px;
+    }
+}
+
+@media (min-width: 1300px) {
+footer span {
+    display: flex;
+    width: 3px;
+    height: 100px;
+    background-color: #B50004;
+    margin-top: 30px;
+}
+
+}

@@ -1,0 +1,746 @@
+﻿
+/*Header */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: serif;
+}
+
+a{
+    text-decoration:none;
+    color:black;
+}
+
+header {
+    display: flex;
+    background-color: #f9eadfff;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}
+
+#logo img{
+    width: 220px;
+    height: 60px;
+}
+
+nav {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    height: 70px;
+}
+
+    nav ul {
+        margin-bottom: -220px;
+        width: 250px;
+        display: none;
+        background-color: #f9eadfff;
+    }
+
+        nav ul.active {
+            display: block;
+            position: relative;
+        }
+
+        nav ul li {
+            margin: 40px 0 40px 0;
+            font-size: 1.5em;
+            list-style: none;
+        }
+
+#ham {
+    height: 25px;
+    width: 30px;
+    position: absolute;
+    margin: 25px 7% 20px 0;
+}
+
+#ham span {
+    background-color: #B50004;
+    width: 25px;
+    height: 3.5px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+
+/*Kothar */
+#Presentation {
+    font-style: italic;
+    position: relative;
+}
+
+    #Presentation h1 {
+        font-size: 60px;
+    }
+
+    #Presentation p {
+        font-size: 25px;
+        padding: 0 30px;
+        max-width: 630px;
+        line-height: 1.3;
+    }
+
+#img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+    #img::before {
+        content: "";
+        background-image: url("1.jpg");
+        background-size: cover;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: 0.7;
+    }
+
+#varmtVälkomna {
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 80px 0 50px 0;
+    text-align: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#divButtons {
+    width: 500px;
+    margin: 50px 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.button {
+    color: #f9eadfff;
+    background-color: #B50004;
+    padding: 7px 30px;
+    font-size: 21px;
+    cursor: pointer;
+    border: 2px solid #B50004;
+    border-radius: 4px;
+    font-family: 'Baskerville Old Face';
+}
+
+    .button:hover {
+        color: #B50004;
+        background-color: #f9eadfff;
+        border: 2px solid #B50004;
+        border-radius: 4px;
+    }
+
+/*Aicha*/
+#bokaBord {
+    width: 100%;
+    background-color: #f9eadfff;
+    text-align: center;
+    font-weight: lighter;
+    padding: 50px 0;
+}
+
+    #bokaBord h1 {
+        padding-bottom: 40px;
+        font-style: italic;
+        font-size: 40px;
+    }
+
+    #bokaBord input {
+        background-color: #f9eadfff;
+        border: 1px solid #B50004;
+        width: 230px;
+        height: 40px;
+        margin: 0 10px 20px 10px;
+        border-radius: 4px;
+    }
+
+        #bokaBord input::placeholder {
+            font-size: 1.3em;
+            font-family: 'Baskerville Old Face';
+            font-style: italic;
+            color: black;
+        }
+
+
+#inputDiv {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.inputDiv {
+    margin-bottom: 30px;
+}
+
+#bokaBord button {
+    padding: 10px 40px;
+    font-size: 1em;
+}
+
+#h1input {
+    text-align: center;
+}
+
+#inputBtn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact {
+    font-family: 'Baskerville Old Face';
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+    padding-bottom: 30px;
+    min-width: 500px;
+}
+    #contact img {
+        width: 40px;
+        opacity: 0.6;
+    }
+
+    #contact span {
+        width: 2px;
+        height: 100px;
+        background-color: black;
+        opacity: 0.6;
+    }
+
+
+
+/*Kothar*/
+#våraTårtor {
+    font-style: italic;
+    font-family: 'Baskerville Old Face';
+}
+
+#gulCupcake {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+}
+
+#rödText {
+    background-color: white;
+    color: #B50004;
+    text-align: center;
+    padding: 50px 30px 30px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+    #rödText h1 {
+        font-size: 50px;
+    }
+
+    #rödText p {
+        max-width: 500px;
+        font-size: 25px;
+        line-height: 1.3;
+    }
+
+
+
+
+/*Aicha*/
+#hittaOss {
+    background-color: #f9eadfff;
+    text-align: center;
+    font-style: italic;
+    font-weight: lighter;
+    margin-top: -32px;
+}
+
+    #hittaOss h1 {
+        padding: 40px 0 30px 0;
+        font-style: italic;
+        font-size: 40px;
+    }
+
+.adressKontakt {
+    margin-bottom: 60px;
+}
+
+    .adressKontakt h2 {
+        font-size: 1.8em;
+    }
+
+    .adressKontakt p {
+        font-size: 1.2em;
+    }
+
+#maps {
+    padding-bottom: 80px;
+}
+
+#oppentider{
+    margin-top: -10px;
+}
+
+
+/*Kothar*/
+
+#Hela {
+    background-color: white;
+    padding-bottom: 50px;
+    text-align: center;
+    font-style: italic;
+}
+
+    #Hela h1 {
+        font-size: 50px;
+    }
+
+#Karusellen {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Baskerville Old Face';
+}
+
+.stars {
+    display: flex;
+}
+
+img {
+    width: 30px;
+}
+
+#Karusellen h2 {
+    font-size: 2.5em;
+}
+
+#Karusellen p {
+    font-size: 1.3em;
+    margin-bottom: 40px
+}
+
+.resension {
+    background-color: #f9eadfff;
+    border: 1px solid #B50004;
+    padding: 30px 40px 60px 40px;
+    width: 250px;
+    height: 260px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+#Matilda, #Peter {
+    display: none;
+}
+
+/*Footer*/
+footer {
+    background-color: #f9eadfff;
+    font-style: italic;
+    padding-top: 20px;
+    text-align: center;
+    font-family: 'Baskerville Old Face';
+}
+
+#icons {
+}
+
+    #icons img {
+        width: 20px;
+        padding: 0 10px 20px 0;
+    }
+
+#kontaktaOssFooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+    #kontaktaOssFooter ul {
+        width: 400px;
+        margin: 0 32px 30px 0;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #kontaktaOssFooter li {
+        list-style: none;
+    }
+
+footer span {
+    display: none;
+}
+
+
+
+/*Aichas sida Våra ingredienser*/
+
+.ingredienserh1{
+    font-size: 50px;
+    padding-top: 50px;
+    font-style: italic;
+}
+
+#ingredienser {
+    text-align: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 50px;
+}
+
+#våraIngredienserPH1Btn {
+    position: relative;
+}
+
+#ingredienser p {
+    font-style: italic;
+    font-size: 25px;
+    padding: 30px;
+    max-width: 630px;
+    line-height: 1.3;
+}
+
+
+#imgIngredienser {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+    #imgIngredienser::before {
+        content: "";
+        background-image: url("tvåKakor1.jpg");
+        background-size: cover;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: 0.5;
+    }
+
+#ingredienserBtn{
+    
+    font-size: 25px;
+}
+
+#ekologisk {
+    background-color: #f9eadfff;
+    text-align: center;
+    color: #B50004;
+    margin-top: -35px;
+    padding-bottom: 60px;
+}
+
+#allaIkoner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    #allaIkoner img {
+        width: 180px;
+    }
+
+    #allaIkoner p {
+        font-family: 'Baskerville Old Face';
+        font-size: 25px;
+        padding: 10px;
+    }
+
+#våraBakverk {
+    background-color: #f9eadfff;
+}
+
+#våraBakverkH1PP {
+    text-align: center;
+    padding: 10px 40px 40px 40px;
+}
+
+    #våraBakverkH1PP p {
+        font-family: 'Baskerville Old Face';
+        font-size: 25px;
+        padding-bottom: 10px;
+        line-height: 1.3;
+    }
+
+
+#panacota {
+    display: none;
+}
+
+#chesscake {
+    width: 100%;
+}
+
+
+
+
+
+
+@media (min-width: 800px) {
+    nav ul {
+        display: flex;
+        width: 48%;
+        margin: 0;
+        height: 100%;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+        nav ul.active {
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 30px 0 0;
+        }
+
+    #ham {
+        display: none;
+    }
+
+    #Presentation p {
+        font-size: 27.5px;
+    }
+
+    #img::before {
+        background-image: url("11.jpg");
+    }
+    #våraTårtor {
+        display: flex;
+        justify-content:center;
+        align-items:center;
+    }
+
+    #gulCupcake {
+        width: 500px;
+        height: 250px;
+        margin-right: 30px;
+    }
+
+    #rödText {
+        width: 50%;
+    }
+
+    #adKoMa {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    .adressKontakt {
+        margin-bottom: 60px;
+        text-align: initial;
+    }
+
+    #hittaOss {
+        margin-top: -27px;
+    }
+
+
+    #Matilda {
+        display: flex;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #kontaktaOssFooter {
+        width: 200px;
+        justify-content: left;
+    }
+
+        #kontaktaOssFooter ul {
+            flex-direction: column;
+        }
+
+        #kontaktaOssFooter li {
+            margin: 0 15px 10px 0;
+        }
+
+    #icons {
+        margin-top: 40px;
+    }
+
+        #icons img {
+            width: 70px;
+        }
+
+
+    #imgIngredienser::before {
+        content: "";
+        background-image: url("tvåKakor2.jpg");
+    }
+
+
+
+    #ekologisk {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 10px;
+    }
+
+
+    #allaIkoner {
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 900px;
+        margin-bottom: 60px;
+    }
+
+        #allaIkoner img {
+            width: 120px;
+        }
+
+        #allaIkoner p {
+            font-size: 17px;
+            padding: 20px;
+        }
+
+
+
+    #våraBakverk {
+        display: flex;
+        align-items: center;
+    }
+
+    #imgsVåraBakverk {
+        width: 60%;
+        padding: 40px 0;
+    }
+
+    #panacota {
+        display: block;
+        width: 300px;
+        margin-left: 50px;
+    }
+
+    #chesscake {
+        display: none;
+    }
+}
+
+@media (min-width: 1300px) {
+    nav ul {
+        width: 40%;
+    }
+    header {
+       
+        height: 90px;
+    }
+    
+    #logo img {
+        width: 100%;
+        height: 70px;
+    }
+
+    #Presentation h1 {
+        font-size: 60px;
+    }
+
+    #Presentation p {
+        font-size: 30px;
+    }
+
+    #img::before {
+        background-image: url("111.jpg");
+    }
+
+    #rödText h1 {
+        font-size: 60px;
+    }
+
+    #rödText p {
+        font-size: 32px;
+    }
+
+
+    #gulCupcake {
+        width: 750px;
+        height: 400px;
+        margin: 30px;
+    }
+
+    #Peter {
+        display: flex;
+    }
+
+   
+    footer span {
+        display: flex;
+        width: 3px;
+        height: 100px;
+        background-color: #B50004;
+        margin-top: 30px;
+    }
+
+
+    #ingredienser p {
+        font-size: 32px;
+        padding: 30px;
+        max-width: 730px;
+    }
+
+    #våraIngredienserPH1Btn {
+        padding: 30px 0;
+    }
+
+    #allaIkoner img {
+        width: 180px;
+    }
+
+    #allaIkoner p {
+        font-size: 25px;
+        padding: 0 20px;
+    }
+
+    #allaIkoner {
+        width: 1200px;
+    }
+
+    #våraBakverk {
+        justify-content: space-between;
+    }
+
+    #våraBakverkH1PP {
+        text-align: center;
+        padding: 0 65px;
+    }
+
+    #imgsVåraBakverk {
+        display: flex;
+    }
+
+    #chesscake {
+        display: initial;
+        width: 470px;
+        height: 320px;
+        margin: 220px 0 0 -100px;
+    }
+
+    #panacota {
+        height: 620px;
+        width: 400px;
+    }
+    
+}
+
+
+
